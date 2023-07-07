@@ -15,11 +15,13 @@ sudo apt-get upgrade
 curl -sSL https://install.pi-hole.net | bash
 
 Use Canadian Shield DNS: https://www.cira.ca/cybersecurity-services/canadian-shield/configure/summary-cira-canadian-shield-dns-resolver-addresses:
+
 149.112.121.20, 149.112.122.20
 
 
 # Setup Adafruit Mini PiTFT - 135x240 Color TFT Add-on for Raspberry Pi
 https://learn.adafruit.com/pi-hole-ad-blocker-with-pi-zero-w?view=all#install-mini-pitft
+
 https://learn.adafruit.com/adafruit-mini-pitft-135x240-color-tft-add-on-for-raspberry-pi/python-setup
 
 sudo apt-get install python3-pip
@@ -50,12 +52,16 @@ Add on the line before exit:
 
 # Enable SPI
 https://raspberrypi.stackexchange.com/questions/127793/raspberry-pi-4b-no-dev-spidev0-0
+
 https://pimylifeup.com/raspberry-pi-spi/
 
-sudo nano /boot/config.txt
-  uncomment #dtparam=spi=on
+  sudo raspi-config nonint do_spi
+OR
+  sudo nano /boot/config.txt
+  
+    uncomment #dtparam=spi=on
 
 # Reboot
-sudo shutdown -r now
+sudo reboot
 
 Voilà!
