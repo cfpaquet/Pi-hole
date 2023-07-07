@@ -28,7 +28,7 @@ sudo apt-get install fonts-dejavu
 
 sudo apt-get install python3-pil    #-----> Not needed
 
-sudo apt-get install python3-numpy
+sudo apt-get install python3-numpy     #-----> Not needed
 
 sudo pip3 install --upgrade adafruit-blinka adafruit-circuitpython-rgb-display spidev
 
