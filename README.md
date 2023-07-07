@@ -23,9 +23,13 @@ https://learn.adafruit.com/pi-hole-ad-blocker-with-pi-zero-w?view=all#install-mi
 https://learn.adafruit.com/adafruit-mini-pitft-135x240-color-tft-add-on-for-raspberry-pi/python-setup
 
 sudo apt-get install python3-pip
+
 sudo apt-get install fonts-dejavu
+
 sudo apt-get install python3-pil
+
 sudo apt-get install python3-numpy
+
 sudo pip3 install --upgrade adafruit-blinka adafruit-circuitpython-rgb-display spidev
 
 # Stats.py
@@ -39,4 +43,5 @@ sudo nano /etc/rc.local
 
 Add on the line before exit:
   sleep 10
+  
   sudo python3 /home/username-here/stats.py &
