@@ -26,7 +26,7 @@ sudo apt-get install python3-pip
 
 sudo apt-get install fonts-dejavu
 
-sudo apt-get install python3-pil
+sudo apt-get install python3-pil    #-----> Not needed
 
 sudo apt-get install python3-numpy
 
