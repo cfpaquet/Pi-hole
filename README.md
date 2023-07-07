@@ -7,6 +7,7 @@ Raspberry Pi OS Lite (32 bit)
 
 # Update the OS
 sudo apt-get update
+
 sudo apt-get upgrade
 
 
