@@ -46,6 +46,7 @@ API_TOKEN = "123456789.............."
 sudo nano /etc/rc.local
 
 Add on the line before exit:
+
   sleep 10
   
   sudo python3 /etc/pihole_stats.py &
@@ -55,8 +56,10 @@ https://raspberrypi.stackexchange.com/questions/127793/raspberry-pi-4b-no-dev-sp
 
 https://pimylifeup.com/raspberry-pi-spi/
 
-  sudo raspi-config nonint do_spi
-OR
+  sudo raspi-config nonint do_spi 0
+  
+  OR
+
   sudo nano /boot/config.txt
   
     uncomment #dtparam=spi=on
