@@ -33,6 +33,8 @@ sudo apt-get install python3-numpy     #-----> Not needed
 sudo pip3 install --upgrade adafruit-blinka adafruit-circuitpython-rgb-display spidev
 
 # Stats.py
+sudo nano /etc/pihole_stats.py
+
 Changed the font size to 16:
 font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 16)
 
@@ -44,4 +46,4 @@ sudo nano /etc/rc.local
 Add on the line before exit:
   sleep 10
   
-  sudo python3 /home/username-here/stats.py &
+  sudo python3 /etc/pihole_stats.py &
