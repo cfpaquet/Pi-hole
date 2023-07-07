@@ -15,8 +15,7 @@ sudo apt-get upgrade
 curl -sSL https://install.pi-hole.net | bash
 
 Use Canadian Shield DNS: https://www.cira.ca/cybersecurity-services/canadian-shield/configure/summary-cira-canadian-shield-dns-resolver-addresses:
-149.112.121.20
-149.112.122.20
+149.112.121.20, 149.112.122.20
 
 
 # Setup Adafruit Mini PiTFT - 135x240 Color TFT Add-on for Raspberry Pi
