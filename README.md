@@ -47,3 +47,15 @@ Add on the line before exit:
   sleep 10
   
   sudo python3 /etc/pihole_stats.py &
+
+# Enable SPI
+https://raspberrypi.stackexchange.com/questions/127793/raspberry-pi-4b-no-dev-spidev0-0
+https://pimylifeup.com/raspberry-pi-spi/
+
+sudo nano /boot/config.txt
+  uncomment #dtparam=spi=on
+
+# Reboot
+sudo shutdown -r now
+
+Voilà!
