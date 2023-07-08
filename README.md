@@ -12,7 +12,7 @@ Raspberry Pi OS Lite (32 bit) (Bullseye 2023-05-03)
 # Update the OS
 sudo apt update
 
-sudo apt upgrade
+sudo apt full-upgrade
 
 
 # Install Pi-hole
