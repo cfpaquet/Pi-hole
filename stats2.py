@@ -73,6 +73,9 @@ backlight.value = True
 buttonA = digitalio.DigitalInOut(board.D23)
 buttonA.switch_to_input()
 
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonB.switch_to_input()
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -149,3 +152,8 @@ while True:
     # Display image.
     disp.image(image, rotation)
     time.sleep(.1)
+
+    if not buttonB.value:  # just button B pressed
+       draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+       disp.image(image, rotation)
+       subprocess.run("shutdown now", shell=True)
