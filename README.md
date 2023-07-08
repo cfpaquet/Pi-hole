@@ -10,9 +10,9 @@ Raspberry Pi OS Lite (32 bit) (Bullseye 2023-05-03)
 -Set the country, timezone, and keyboard layout
 
 # Update the OS
-sudo apt-get update
+sudo apt update
 
-sudo apt-get upgrade
+sudo apt upgrade
 
 
 # Install Pi-hole
@@ -28,13 +28,13 @@ https://learn.adafruit.com/pi-hole-ad-blocker-with-pi-zero-w?view=all#install-mi
 
 https://learn.adafruit.com/adafruit-mini-pitft-135x240-color-tft-add-on-for-raspberry-pi/python-setup
 
-sudo apt-get install python3-pip
+sudo apt install python3-pip
 
-sudo apt-get install fonts-dejavu
+sudo apt install fonts-dejavu
 
-sudo apt-get install python3-pil    #-----> Not needed
+sudo apt install python3-pil    #-----> Not needed
 
-sudo apt-get install python3-numpy     #-----> Not needed
+sudo apt install python3-numpy     #-----> Not needed
 
 sudo pip3 install --upgrade adafruit-blinka adafruit-circuitpython-rgb-display spidev
 
