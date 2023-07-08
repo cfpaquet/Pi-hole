@@ -55,6 +55,10 @@ Add on the line before exit:
   
   sudo python3 /etc/pihole_stats.py &
 
+# Add another ad list to pi-hole
+https://big.oisd.nl/
+
+
 # Enable SPI
 https://raspberrypi.stackexchange.com/questions/127793/raspberry-pi-4b-no-dev-spidev0-0
 
