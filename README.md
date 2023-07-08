@@ -2,8 +2,12 @@
 Pi-hole installation instructions
 
 # Install the OS
-Raspberry Pi OS Lite (32 bit)
-
+Raspberry Pi OS Lite (32 bit) (Bullseye 2023-05-03)
+-Set the hostname
+-Enable ssh
+-Set username/password
+-Setup Wi-Fi
+-Set the country, timezone, and keyboard layout
 
 # Update the OS
 sudo apt-get update
